@@ -10,12 +10,6 @@ interface ScheduleItem {
   to: string;
 }
 
-interface Filters {
-  week_day: string;
-  subject: string;
-  time: string;
-}
-
 classRouter.get("/", async (req, res) => {
   const filters = req.query;
 
