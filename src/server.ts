@@ -6,7 +6,7 @@ app.use(express.json());
 app.use(router);
 
 app.get("/", (req, res) => {
-  res.send("Big Rules");
+  res.json({ message: "Big Rules" });
 });
 
 app.listen(3333, () => {
